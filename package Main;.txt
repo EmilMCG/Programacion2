@@ -1,0 +1,14 @@
+package Main;
+import Formulario.FrmUsuario;
+/**
+ *
+ * @author 
+ */
+public class Main {
+    public static void main(String[] args) {
+       
+            FrmUsuario Frm = new FrmUsuario();
+            Frm.setVisible(true);
+           
+    }    
+}

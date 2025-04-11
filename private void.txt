@@ -1,0 +1,25 @@
+Usuario user = new Usuario();
+
+private void btnGuardarListActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+        boolean Registrado = user.guardarUsuarioList(txtNombre.getText(), txtNickname.getText(), txtClave.getText());
+        if (Registrado){
+            JOptionPane.showMessageDialog(rootPane, "Usuario Ingresado");
+            System.out.println("El Usuario Registrado En List Fue: "+user.listarUsuarioList());
+        }else{
+            JOptionPane.showMessageDialog(rootPane, "Error");
+        }
+    }                                              
+
+
+
+    private void btnGuardarMapActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+        boolean Registrado = user.guardarUsuarioList(txtNombre.getText(), txtNickname.getText(), txtClave.getText());
+        if (Registrado){
+            JOptionPane.showMessageDialog(rootPane, "Usuario Ingresado");
+            System.out.println("El Usuario Registrado En Map Fue: "+user.listarUsuarioMap());
+        }else{
+            JOptionPane.showMessageDialog(rootPane, "Error");
+        }  
+    }   
